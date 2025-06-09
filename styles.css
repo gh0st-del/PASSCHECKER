@@ -125,3 +125,18 @@ footer {
     color: #ccc;
     font-size: 0.9em;
 }
+footer {
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
