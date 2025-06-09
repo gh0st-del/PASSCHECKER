@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockYou Password Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 PassChecker</h1>
+        <p class="subtitle">Check if your password exists in the RockYou database</p>
+        
+        <div class="input-group">
+            <input type="password" id="passwordInput" placeholder="Enter password to check..." maxlength="100">
+            <button id="togglePassword" class="toggle-btn" title="Show/Hide Password">👁️</button>
+        </div>
+        
+        <button id="checkButton" class="check-btn">Check Password</button>
+        
+        <div id="loadingSpinner" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading RockYou database...</p>
+        </div>
+        
+        <div id="result" class="result hidden"></div>
+        
+        <div class="info">
+            <h3>About RockYou Database</h3>
+            <p>The RockYou database contains over 14 million commonly used passwords. This tool helps you check if your password is among the most commonly used (and therefore less secure) passwords.</p>
+            <p><strong>Note:</strong> Your password is checked locally in your browser for security.</p>
+        </div>
+        
+        <footer>
+          created by gh0st
+            <p>&copy; 2025 PASSCHECKER. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
